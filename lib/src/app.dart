@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-// create a class that will be out custom widget
-// extend the StatelessWidget base class
-class App extends StatelessWidget {
+class App extends StatefulWidget {}
+
+class AppState extends State<App> {
   Widget build(context) {
     return MaterialApp(
       home: Scaffold(
@@ -19,4 +19,3 @@ class App extends StatelessWidget {
     );
   }
 }
-// must define a build method that returns the widgets that this widget will show.
