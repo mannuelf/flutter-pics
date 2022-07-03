@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   var app = MaterialApp(
-    home: Text('Hello world'),
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('Lets see some images'),
+      ),
+    ),
   );
 
   runApp(app);
