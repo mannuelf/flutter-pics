@@ -10,4 +10,10 @@ class ImageModel {
     url = parsedJson['url'];
     title = parsedJson['title'];
   }
+
+  // Alternate syntax using colon
+  // ImageModel.fromJson(Map<String, dynamic> parsedJson)
+  //     : id = parsedJson['id'],
+  //       url = parsedJson['url'],
+  //       title = parsedJson['title'];
 }
