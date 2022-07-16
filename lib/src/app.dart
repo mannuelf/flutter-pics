@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
@@ -21,9 +22,9 @@ class AppState extends State<App> {
 
   void fetchImage() async {
     counter++;
-    var uri = 'https://jsonplaceholder.typicode.com/posts/$counter';
-    var response = await get(Uri.parse(uri));
-    var imageModel = ImageModel.fromJson(json.decode(response.body));
+    var uri = 'https://jsonplaceholder.typicode.com/photos/$counter';
+    final response = await get(Uri.parse(uri));
+    final imageModel = ImageModel.fromJson(json.decode(response.body));
 
     setState(() {
       images.add(imageModel);

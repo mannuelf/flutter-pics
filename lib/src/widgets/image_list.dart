@@ -13,6 +13,8 @@ class ImageList extends StatelessWidget {
       itemCount: images.length,
       itemBuilder: (context, int index) {
         // logic to construct new widget, item.
+        print(images[index].url);
+        return Text(images[index].url);
       },
     );
   }
