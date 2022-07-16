@@ -2,7 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
-import 'package:pics/src/models/image_models.dart';
+
+import './models/image_models.dart';
+import './widgets/image_list.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -32,7 +34,7 @@ class AppState extends State<App> {
   Widget build(context) {
     return MaterialApp(
       home: Scaffold(
-        body: Text('$counter'),
+        body: ImageList(),
         floatingActionButton: FloatingActionButton(
           onPressed: fetchImage,
           child: const Icon(Icons.add),
