@@ -16,9 +16,7 @@ class AppState extends State<App> {
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
-            print('incrementing... $counter');
             setState(() => counter += 1);
-            print('incremented: $counter');
           },
         ),
         appBar: AppBar(
