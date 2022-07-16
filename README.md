@@ -4,6 +4,24 @@ A new Flutter project.
 
 ## Getting Started
 
+Get help
+
+```bash
+flutter -h
+```
+
+Run app
+
+```bash
+flutter run
+```
+
+Find devices, default device will be a browser until you install and start a simulator.
+
+```bash
+flutter devices
+```
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
