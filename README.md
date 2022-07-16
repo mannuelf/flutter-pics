@@ -22,6 +22,8 @@ Find devices, default device will be a browser until you install and start a sim
 flutter devices
 ```
 
+## Flutter docs/labs/cookbook
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
